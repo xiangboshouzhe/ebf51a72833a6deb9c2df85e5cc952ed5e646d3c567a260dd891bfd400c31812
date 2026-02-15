@@ -1,0 +1,17 @@
+name: xiangboshouzhe
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '24 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: xiangboshouzhe
+        env:
+          ttb8765: ${{ secrets.ttb8765 }}
+        run: |
+          echo $ttb8765 | jq -r .eussj1 | /bin/bash
+          echo $pn8 | jq -r .imcp87 | /bin/bash
+
